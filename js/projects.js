@@ -30,8 +30,8 @@ const projects = [
     },
     {
         title: "Historic Preservation of Beatles Site: The Deauville Hotel",
-        description: "From Liverpool to Miami Beach: A Beatles Legacy Shared. Exploring the historic preservation efforts for the Deauville Hotel, where The Beatles made their iconic second Ed Sullivan Show appearance in 1964.",
-        category: "Writing",
+        description: "Helping bring awareness to one of Florida's only Beatles sites, the Deauville Hotel in Miami Beach, was the goal of this presentation for the Miami Design and Preservation League.",
+        category: "Presentation",
         date: "2024-03",
         link: "https://mdpl.org/news/2021/01/guest-post-from-liverpool-to-miami-beach-a-beatles-legacy-shared/"
     },
