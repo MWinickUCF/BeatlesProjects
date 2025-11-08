@@ -13,6 +13,20 @@
 
 const projects = [
     {
+        title: "Unseen George Harrison Photos from Deerfield Beach",
+        description: "Promoting an exhibit of the recent finding of unseen George Harrison photos from his time in Deerfield Beach, FL in November 1970.",
+        category: "Creative",
+        date: "2024-11",
+        link: "https://www.yahoo.com/entertainment/music/articles/magical-mystery-solved-never-seen-184400999.html"
+    },
+    {
+        title: "Fest Fans Get Together in Chicago",
+        description: "Beatles fest fans gathering in Chicago to celebrate and share their love for The Beatles, featuring interviews and highlights from the event.",
+        category: "Creative",
+        date: "2024-10",
+        link: "https://brunchradio.com/fest-fans-get-together-in-chicago-2/"
+    },
+    {
         title: "The Beatles' Influence on Modern Music",
         description: "A comprehensive analysis exploring how The Beatles' innovative recording techniques and songwriting approaches continue to influence contemporary artists across multiple genres.",
         category: "Writing",
