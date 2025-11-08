@@ -137,7 +137,15 @@ function createProjectCard(project) {
     // Format date for display
     const formattedDate = formatDate(project.date);
 
+    // Create thumbnail HTML if thumbnail exists
+    const thumbnailHTML = project.thumbnail
+        ? `<div class="project-thumbnail">
+               <img src="${escapeHtml(project.thumbnail)}" alt="${escapeHtml(project.title)}" loading="lazy">
+           </div>`
+        : '';
+
     card.innerHTML = `
+        ${thumbnailHTML}
         <div class="project-category">${escapeHtml(project.category)}</div>
         <h4 class="project-title">${escapeHtml(project.title)}</h4>
         <div class="project-date">${formattedDate}</div>

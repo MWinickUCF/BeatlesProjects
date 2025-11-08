@@ -9,6 +9,7 @@
  * - category: One of "Creative", "Writing", "Presentation", or "Assignment"
  * - date: Date in format "YYYY-MM" or "YYYY-MM-DD"
  * - link: URL to the project content (can be a PDF, external site, etc.)
+ * - thumbnail: (Optional) Path to thumbnail image in images/ directory
  */
 
 const projects = [
@@ -17,7 +18,8 @@ const projects = [
         description: "Promoting an exhibit of the recent finding of unseen George Harrison photos from his time in Deerfield Beach, FL in November 1970.",
         category: "Creative",
         date: "2024-11",
-        link: "https://www.yahoo.com/entertainment/music/articles/magical-mystery-solved-never-seen-184400999.html"
+        link: "https://www.yahoo.com/entertainment/music/articles/magical-mystery-solved-never-seen-184400999.html",
+        thumbnail: "images/george-harrison-deerfield.jpeg"
     },
     {
         title: "Fest Fans Get Together in Chicago",

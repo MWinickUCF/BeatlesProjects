@@ -248,6 +248,24 @@ h3 {
     transform: scaleY(1);
 }
 
+.project-thumbnail {
+    margin: calc(var(--spacing-lg) * -1) calc(var(--spacing-lg) * -1) var(--spacing-md);
+    overflow: hidden;
+    border-bottom: 2px solid var(--medium-gray);
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-thumbnail img {
+    transform: scale(1.05);
+}
+
 .project-category {
     display: inline-block;
     font-family: var(--font-heading);
