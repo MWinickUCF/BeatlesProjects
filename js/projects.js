@@ -18,8 +18,7 @@ const projects = [
         description: "Promoting an exhibit of the recent finding of unseen George Harrison photos from his time in Deerfield Beach, FL in November 1970.",
         category: "Creative",
         date: "2024-11",
-        link: "https://www.yahoo.com/entertainment/music/articles/magical-mystery-solved-never-seen-184400999.html",
-        thumbnail: "images/george-harrison-deerfield.jpeg"
+        link: "https://www.yahoo.com/entertainment/music/articles/magical-mystery-solved-never-seen-184400999.html"
     },
     {
         title: "Fest Fans Get Together in Chicago",
@@ -34,27 +33,6 @@ const projects = [
         category: "Presentation",
         date: "2024-03",
         link: "https://mdpl.org/news/2021/01/guest-post-from-liverpool-to-miami-beach-a-beatles-legacy-shared/"
-    },
-    {
-        title: "Abbey Road: A Visual Timeline",
-        description: "An interactive creative project documenting the making of Abbey Road, featuring rare photographs, recording session notes, and artist interviews from the historic 1969 sessions.",
-        category: "Creative",
-        date: "2024-01",
-        link: "#"
-    },
-    {
-        title: "The Beatles and the British Invasion",
-        description: "A detailed presentation examining The Beatles' role in the British Invasion of the 1960s and their impact on American popular culture and the music industry.",
-        category: "Presentation",
-        date: "2023-11",
-        link: "#"
-    },
-    {
-        title: "Analyzing Sgt. Pepper's Lonely Hearts Club Band",
-        description: "Academic course assignment providing musicological analysis of the groundbreaking 1967 album, including production techniques, lyrical themes, and cultural significance.",
-        category: "Assignment",
-        date: "2023-09",
-        link: "#"
     },
     {
         title: "Beatles in Florida: Photo Collection",
