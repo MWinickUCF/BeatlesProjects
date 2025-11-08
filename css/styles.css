@@ -1,0 +1,397 @@
+/* ===================================
+   Margot Winick Beatles Portfolio
+   Professional styling with vintage elements
+   =================================== */
+
+/* ===== CSS Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Palette - Black & White with Vintage Grays */
+    --primary-black: #1a1a1a;
+    --secondary-black: #2d2d2d;
+    --light-gray: #f5f5f5;
+    --medium-gray: #e0e0e0;
+    --dark-gray: #4a4a4a;
+    --white: #ffffff;
+    --accent-gray: #707070;
+
+    /* Typography */
+    --font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-body: 'Georgia', 'Times New Roman', serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--primary-black);
+    background-color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 100%);
+    color: var(--white);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    border-bottom: 4px solid var(--dark-gray);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-xs);
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* ===== Main Content ===== */
+main {
+    flex: 1;
+    padding: var(--spacing-xl) 0;
+}
+
+section {
+    margin-bottom: var(--spacing-xl);
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-black);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--medium-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===== About Section ===== */
+.about-section {
+    background-color: var(--light-gray);
+    padding: var(--spacing-lg);
+    border-radius: 4px;
+    border-left: 4px solid var(--primary-black);
+}
+
+.about-content p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+.social-link {
+    color: var(--primary-black);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--dark-gray);
+    transition: border-color var(--transition-fast);
+}
+
+.social-link:hover {
+    border-color: var(--primary-black);
+}
+
+.contact-info {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--medium-gray);
+}
+
+.contact-info a {
+    color: var(--primary-black);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-gray);
+    transition: border-color var(--transition-fast);
+}
+
+.contact-info a:hover {
+    border-color: var(--primary-black);
+}
+
+/* ===== Controls (Search & Sort) ===== */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--light-gray);
+    border-radius: 4px;
+}
+
+.search-container {
+    flex: 1;
+    min-width: 250px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: var(--spacing-sm);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    border: 2px solid var(--medium-gray);
+    border-radius: 4px;
+    transition: border-color var(--transition-fast);
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: var(--primary-black);
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.sort-container label {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.sort-container select {
+    padding: var(--spacing-sm);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    border: 2px solid var(--medium-gray);
+    border-radius: 4px;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: border-color var(--transition-fast);
+}
+
+.sort-container select:focus {
+    outline: none;
+    border-color: var(--primary-black);
+}
+
+/* ===== Projects Grid ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.project-card {
+    background-color: var(--white);
+    border: 2px solid var(--medium-gray);
+    border-radius: 4px;
+    padding: var(--spacing-lg);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-black);
+    transform: scaleY(0);
+    transition: transform var(--transition-normal);
+}
+
+.project-card:hover {
+    border-color: var(--primary-black);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.project-card:hover::before {
+    transform: scaleY(1);
+}
+
+.project-category {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    background-color: var(--primary-black);
+    padding: 0.3rem 0.8rem;
+    border-radius: 3px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-black);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+}
+
+.project-date {
+    font-size: 0.9rem;
+    color: var(--accent-gray);
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-md);
+}
+
+.project-link {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--primary-black);
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid var(--primary-black);
+    border-radius: 4px;
+    transition: all var(--transition-fast);
+}
+
+.project-link:hover {
+    background-color: var(--primary-black);
+    color: var(--white);
+}
+
+/* ===== No Results Message ===== */
+.no-results {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background-color: var(--light-gray);
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--primary-black);
+    color: var(--white);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .sort-container {
+        width: 100%;
+    }
+
+    .sort-container select {
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-card {
+        padding: var(--spacing-md);
+    }
+}
+
+/* ===== Accessibility ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus,
+input:focus,
+select:focus {
+    outline: 2px solid var(--primary-black);
+    outline-offset: 2px;
+}

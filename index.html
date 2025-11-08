@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Margot Winick's portfolio of Beatles projects, writings, and engagements">
+    <meta name="author" content="Margot Winick">
+    <title>Margot Winick - Beatles Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Margot Winick</h1>
+            <h2>Portfolio of Projects on The Beatles</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <h3>About Me</h3>
+            <div class="about-content">
+                <p>
+                    Welcome to my portfolio showcasing my work and passion for The Beatles.
+                    This collection includes creative projects, academic writings, presentations,
+                    and course assignments exploring various aspects of The Beatles' music,
+                    history, and cultural impact.
+                </p>
+                <p>
+                    Connect with me on Facebook:
+                    <a href="https://www.facebook.com/beatlesinflorida" target="_blank" rel="noopener noreferrer" class="social-link">
+                        Beatles in Florida
+                    </a>
+                </p>
+                <div class="contact-info">
+                    <p><strong>Contact:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h3>Projects & Works</h3>
+
+            <!-- Search and Sort Controls -->
+            <div class="controls">
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search projects by title, description, or category..."
+                        aria-label="Search projects"
+                    >
+                </div>
+                <div class="sort-container">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect" aria-label="Sort projects">
+                        <option value="date-desc">Newest First</option>
+                        <option value="date-asc">Oldest First</option>
+                        <option value="title-asc">Title (A-Z)</option>
+                        <option value="title-desc">Title (Z-A)</option>
+                        <option value="category">Category</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projectsGrid" class="projects-grid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No projects found matching your search.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Margot Winick. All rights reserved.</p>
+            <p class="footer-note">A tribute to The Beatles and their enduring legacy</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
