@@ -33,7 +33,7 @@ const projects = [
         description: "A comprehensive analysis exploring how The Beatles' innovative recording techniques and songwriting approaches continue to influence contemporary artists across multiple genres.",
         category: "Writing",
         date: "2024-03",
-        link: "#"
+        link: "https://mdpl.org/news/2021/01/guest-post-from-liverpool-to-miami-beach-a-beatles-legacy-shared/"
     },
     {
         title: "Abbey Road: A Visual Timeline",
