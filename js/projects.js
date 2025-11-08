@@ -29,8 +29,8 @@ const projects = [
         link: "https://brunchradio.com/fest-fans-get-together-in-chicago-2/"
     },
     {
-        title: "The Beatles' Influence on Modern Music",
-        description: "A comprehensive analysis exploring how The Beatles' innovative recording techniques and songwriting approaches continue to influence contemporary artists across multiple genres.",
+        title: "Historic Preservation of Beatles Site: The Deauville Hotel",
+        description: "From Liverpool to Miami Beach: A Beatles Legacy Shared. Exploring the historic preservation efforts for the Deauville Hotel, where The Beatles made their iconic second Ed Sullivan Show appearance in 1964.",
         category: "Writing",
         date: "2024-03",
         link: "https://mdpl.org/news/2021/01/guest-post-from-liverpool-to-miami-beach-a-beatles-legacy-shared/"
